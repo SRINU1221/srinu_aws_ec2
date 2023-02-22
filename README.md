@@ -45,6 +45,12 @@ for creation of ec2 we need key_pair and security_froup id's
         
         
 ---->Create the S3 bucket and deploy a static website using the deploy_static_website:
+-----------------------------------------------------------------------------------------
+
+urlfor static website:  http://chauhanweb.s3-website.ap-south-1.amazonaws.com
+
+
+
 steps:
 1.Create an S3 client object by passing your AWS access key ID and secret access key to the boto3.client() method and Replace 'ACCESS_KEY' and 'SECRET_KEY' with your actual AWS access key ID and secret access key.
 2.Define a function called create_bucket() that will create an S3 bucket. The function takes two arguments: bucket_name and region.This function uses the create_bucket() method of the S3 client object to create a new bucket with the specified name and region. If the region is not specified, the bucket will be created in the default region (us-east-1).
